@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../../favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hiding.css">
+    <title>IFC.js</title>
+</head>
+<body>
+<canvas id="three-canvas"></canvas>
+
+
+<div class="checkboxes">
+   <div>
+        <input checked="true" id="3512223829" type="checkbox" onchange="checkBoxChange(event);">
+        Walls
+    </div>
+    <div>
+        <input checked="true" id="1529196076" type="checkbox" onchange="checkBoxChange(event);">
+        Slabs
+    </div>
+    <div>
+        <input checked="true" id="3304561284" type="checkbox" onchange="checkBoxChange(event);">
+        Windows
+    </div>
+    <div>
+        <input checked="true" id="263784265" type="checkbox" onchange="checkBoxChange(event);">
+        Furniture
+    </div>
+    <div>
+        <input checked="true" id="395920057" type="checkbox" onchange="checkBoxChange(event);">
+        Doors
+    </div>
+    <div>
+        <input checked="true" id="1073191201" type="checkbox" onchange="checkBoxChange(event);">
+        Curtain wall structure
+    </div>
+    <div>
+        <input checked="true" id="3171933400" type="checkbox" onchange="checkBoxChange(event);">
+        Curtain wall plates
+    </div>
+	 <div>
+        <input checked="true" id="3856911033" type="checkbox" onchange="checkBoxChange(event);">
+        Space
+    </div>
+</div>
+<!-- <script src="./resources/hiding.js"></script> -->
+ <script src="./resources/ifcJsViewer.js"></script> 
+<script>
+function checkBoxChange(event)
+{
+debugger
+            var checked = event.target.checked;
+               
+		 if (checked)
+		 {	
+         	// showElments(Number(event.target.id)) ;
+		 }
+		 else
+		 {
+		      hideElments(Number(event.target.id)) ;
+			
+		 }
+}		
+	
+</script>
+</body>
+</html>
